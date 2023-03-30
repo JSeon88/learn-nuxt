@@ -11,6 +11,22 @@
   - 1.x 버전 이슈 : require() of ES Module 이슈 있음
     [참고](https://github.com/axios/axios/issues/5091)
 
+## nuxt.config.js
+
+### 서버 포트 설정
+
+```
+  server: {
+    port: 5000,
+  },
+```
+
+### 전역 스타일시트 설정
+
+```
+  css: ['@/assets/css/reset.css'],
+```
+
 ## nuxt
 
 ### asyncData
