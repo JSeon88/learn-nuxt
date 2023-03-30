@@ -20,6 +20,27 @@
   - vue 인스턴스가 아닌 Nuxt.js의 컨텍스트 객체이기 때문
 - asyncData에서 반환한 객체가 Vue 인스턴스의 data에 병합
 
+#### context 속성
+
+- asyncData 속성의 파라미터
+  - 넉스트 프레임워크 전반에 걸쳐 공용으로 사용되는 속성
+  - [context](https://nuxtjs.org/docs/internals-glossary/context/)
+    ```
+    const {
+        app,
+        store,
+        route,
+        params,
+        query,
+        env,
+        isDev,
+        isHMR,
+        redirect,
+        error,
+        $config
+      } = context
+    ```
+
 ### 동적 라우팅
 
 [동적 라우팅](https://develop365.gitlab.io/nuxtjs-0.10.7-doc/ko/guide/routing/#%EB%8F%99%EC%A0%81-%EB%9D%BC%EC%9A%B0%ED%8A%B8)
