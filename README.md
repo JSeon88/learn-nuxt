@@ -19,3 +19,19 @@
 - this를 사용한 데이터나 메소드 접근 불가
   - vue 인스턴스가 아닌 Nuxt.js의 컨텍스트 객체이기 때문
 - asyncData에서 반환한 객체가 Vue 인스턴스의 data에 병합
+
+### 동적 라우팅
+
+[동적 라우팅](https://develop365.gitlab.io/nuxtjs-0.10.7-doc/ko/guide/routing/#%EB%8F%99%EC%A0%81-%EB%9D%BC%EC%9A%B0%ED%8A%B8)
+
+```
+this.$router.push(`detail/${id}`)
+```
+
+- 동적으로 id를 받아와야 할 경우 폴더 구조는 다음과 같음
+  ```
+   pages
+    L detail
+      L _id.vue
+  ```
+  - \_{id}.vue 라는 이름으로 하게 되면 동적으로 id를 받아올 수 있게 됨
