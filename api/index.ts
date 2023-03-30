@@ -11,8 +11,20 @@ const instance = axios.create({
   baseURL: 'http://localhost:3000',
 });
 
+function fetchProducts(): Promise<Product[]> {
+  return instance.get(`/products`);
+}
+
 function fetchProductById(id: number): Promise<Product> {
   return instance.get(`/products/${id}`);
 }
 
-export { fetchProductById };
+function fetchProductsByKeyword(keyword: string): Promise<Product[]> {
+  return instance.get(`/products`, {
+    params: {
+      name_like: keyword,
+    },
+  });
+}
+
+export { fetchProducts, fetchProductById, fetchProductsByKeyword };
