@@ -66,9 +66,21 @@ this.$router.push(`detail/${id}`)
 ```
 
 - 동적으로 id를 받아와야 할 경우 폴더 구조는 다음과 같음
+
   ```
    pages
     L detail
       L _id.vue
   ```
+
   - \_{id}.vue 라는 이름으로 하게 되면 동적으로 id를 받아올 수 있게 됨
+
+  ### Vuex
+
+  [Vuex](https://v3.vuex.vuejs.org/kr/)
+
+  [Vuex in Nuxt](https://nuxtjs.org/docs/directory-structure/store/)
+
+  - 넉스트에서 뷰엑스를 사용하려면 `store` 폴더를 생성하고 그 밑에 index 파일을 생성하면 됨
+  - 기본적으로 store 폴더가 없다면 뷰엑스 라이브러리는 자동으로 비활성화
+    - 빌드 파일에 포함되지 않음
