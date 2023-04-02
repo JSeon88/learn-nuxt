@@ -84,3 +84,9 @@ this.$router.push(`detail/${id}`)
   - 넉스트에서 뷰엑스를 사용하려면 `store` 폴더를 생성하고 그 밑에 index 파일을 생성하면 됨
   - 기본적으로 store 폴더가 없다면 뷰엑스 라이브러리는 자동으로 비활성화
     - 빌드 파일에 포함되지 않음
+
+  #### nuxtServerInit(storeContext, nuxtContext)
+
+  - 서버 사이드 렌더링 시점에 실행되기 때문에 스토어에 미리 데이터를 설정해 놓거나 서버에서만 접근할 수 있는 데이터를 다룰 때 유용
+  - 첫 번째 파라미터는 [스토어의 컨텍스트](https://vuex.vuejs.org/guide/actions.html) 정보를 접근할 수 있는 객체
+  - 두 번째 파라미터는 [넉스트의 컨텍스트](https://nuxtjs.org/docs/concepts/context-helpers/)정보가 담긴 객체

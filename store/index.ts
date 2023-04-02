@@ -37,4 +37,7 @@ export const actions = {
     const { data }: any = await fetchCartItems();
     commit('setCartItems', data);
   },
+  async nuxtServerInit(storeContext: any) {
+    await storeContext.dispatch(FETCH_CART_ITEMS);
+  },
 };
