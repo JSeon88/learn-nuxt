@@ -57,6 +57,24 @@
       } = context
     ```
 
+### fetch
+
+[Data Fetching](https://nuxtjs.org/docs/features/data-fetching/)
+
+- 페이지 컴포넌트 뿐만 아니라 일반 뷰 컴포넌트에서도 사용할 수 있는 데이터 호출 속성
+  - 호출되는 상황
+    - 서버 사이드 렌더링을 위해 서버에서 화면을 구성할 때 컴포넌트가 생성되고 나서 실행됨
+    - 브라우저에서 URL 주소를 변경해서 페이지를 이동할 때
+- 제공되는 속성
+  - $fetchState
+    - 데이터 호출 상태를 나타내는 속성이며 인스턴스로 접근 가능.
+    - 호출 상태에 따라 pending, error, timestamp 제공
+  - $fetch
+    - fetch 로직을 다시 실행시킬 수 있는 함수
+  - fetchOnServer
+    - 서버 사이드 렌더링 시에 서버에서 fetch를 실행할지 말지 결정하는 속성
+    - 기본값은 true
+
 ### 동적 라우팅
 
 [동적 라우팅](https://develop365.gitlab.io/nuxtjs-0.10.7-doc/ko/guide/routing/#%EB%8F%99%EC%A0%81-%EB%9D%BC%EC%9A%B0%ED%8A%B8)
