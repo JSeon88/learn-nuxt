@@ -27,4 +27,13 @@ function fetchProductsByKeyword(keyword: string): Promise<Product[]> {
   });
 }
 
-export { fetchProducts, fetchProductById, fetchProductsByKeyword };
+function createCartItem(cartItem: Product): Promise<Product> {
+  return instance.post(`/carts`, cartItem);
+}
+
+export {
+  fetchProducts,
+  fetchProductById,
+  fetchProductsByKeyword,
+  createCartItem,
+};
