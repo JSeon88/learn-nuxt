@@ -31,9 +31,14 @@ function createCartItem(cartItem: Product): Promise<Product> {
   return instance.post(`/carts`, cartItem);
 }
 
+function fetchCartItems(): Promise<Product> {
+  return instance.get(`/carts`);
+}
+
 export {
   fetchProducts,
   fetchProductById,
   fetchProductsByKeyword,
   createCartItem,
+  fetchCartItems,
 };
