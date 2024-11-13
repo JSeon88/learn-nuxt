@@ -39,4 +39,9 @@ export default {
   server: {
     port: 5000,
   },
+
+  storybook: {
+    stories: ['~/components/**/*.stories.mdx'],
+    addons: [],
+  },
 };
