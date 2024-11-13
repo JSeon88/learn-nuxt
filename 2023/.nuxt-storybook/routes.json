@@ -1,0 +1,20 @@
+[
+  {
+    "name": "cart",
+    "path": "/cart",
+    "component": "/Users/al01577266/Documents/jeon/learn-nuxt/pages/cart.vue",
+    "chunkName": "pages/cart"
+  },
+  {
+    "name": "detail-id",
+    "path": "/detail/:id?",
+    "component": "/Users/al01577266/Documents/jeon/learn-nuxt/pages/detail/_id.vue",
+    "chunkName": "pages/detail/_id"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/al01577266/Documents/jeon/learn-nuxt/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]

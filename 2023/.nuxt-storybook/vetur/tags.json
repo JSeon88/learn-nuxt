@@ -1,0 +1,17 @@
+{
+  "AppHeader": {
+    "description": "Auto imported from components/AppHeader.vue"
+  },
+  "AwesomeButton": {
+    "description": "Auto imported from components/AwesomeButton.vue"
+  },
+  "CartList": {
+    "description": "Auto imported from components/CartList.vue"
+  },
+  "Link": {
+    "description": "Auto imported from components/Link.vue"
+  },
+  "SearchInput": {
+    "description": "Auto imported from components/SearchInput.vue"
+  }
+}
