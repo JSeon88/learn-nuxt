@@ -1,16 +1,11 @@
 <template>
   <div>
-    <nav>
-      <ul>
-        <li>
-          <NuxtLink to="/">Main</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/about">About</NuxtLink>
-        </li>
-      </ul>
-    </nav>
-    <!-- 추가 -->
-    <NuxtPage />
+    <NuxtLayout :name="layout">
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
+
+<script setup lang="ts">
+const layout = 'another';
+</script>
