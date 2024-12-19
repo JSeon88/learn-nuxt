@@ -1,5 +1,5 @@
 <template>
     <div>
-        <h1>Blog Main Page</h1>
+        <h1>All blog posts list!</h1>
     </div>
 </template>
