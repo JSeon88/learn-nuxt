@@ -1,0 +1,11 @@
+<template>
+    <article class="prose dark:prose-invert">
+        <ContentDoc />
+    </article>
+</template>
+
+<script setup lang="ts">
+const route = useRoute();
+
+console.log(route.path);
+</script>
