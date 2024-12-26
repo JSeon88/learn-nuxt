@@ -1,22 +1,5 @@
 <template>
-    <div>
-        <h1>About Page</h1>
-    </div>
-    <div>
-        <button @click="enableCustomLayout">Upsate layout</button>
-    </div>
+   <article class="prose dark:prose-invert prose-h1:text-2xl">
+      <ContentDoc path="/about"/>
+   </article>
 </template>
-
-<script setup lang="ts">
-definePageMeta({
-    layout: false
-})
-
-function enableCustomLayout() {
-    setPageLayout('another');
-}
-
-useHead({
-    title: 'About'
-})
-</script>
