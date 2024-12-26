@@ -39,4 +39,4 @@ Tables:
 	<div>Hello!</div>
 </html>
 ```
-[Go to the second article](/blog/second)
+[Go to the second article](/blog/vue-introduction)
