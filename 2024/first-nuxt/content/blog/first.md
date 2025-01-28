@@ -1,6 +1,7 @@
 ---
 title: 'Title of the page'
 description: 'meta description of the page'
+publishedAt: '2024-03-01'
 head:
   meta:
     - name: 'keywords'
@@ -14,12 +15,19 @@ head:
     - name: 'og:title'
       content: 'This is an OpenGraph title'
 ---
+
 # First post on our website
+
 ## Introduction 
+
 This is some text. *This is italic*.
+
 ## Second Part
+
 Something more. **This is bold**.
+
 ### Also try lists
+
 Unordered lists:
  - Do the work
  - Collect benefits
@@ -34,9 +42,11 @@ Tables:
 | Name | Surname |
 |--|--|
 | Piotr | Jura |
+
 ```html
 <html>
 	<div>Hello!</div>
 </html>
+
 ```
 [Go to the second article](/blog/vue-introduction)
