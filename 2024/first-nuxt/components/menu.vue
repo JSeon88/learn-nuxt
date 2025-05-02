@@ -19,6 +19,6 @@
 
 <style lang="postcss" scoped>
 .link {
-    @apply p-1 hover:bg-gray-200 dark:hover:text-gray-700
+    @apply p-1 hover:bg-gray-200 dark:hover:text-gray-800
 }
 </style>
